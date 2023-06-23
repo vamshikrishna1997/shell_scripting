@@ -4,7 +4,9 @@
   connection: local
   gather_facts: False
   tags: provisioning
-
+  vars_files:
+    - /variables.yml
+    
   tasks:
     - name: Create my security group
       local_action:
