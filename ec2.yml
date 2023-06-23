@@ -5,7 +5,7 @@
   gather_facts: False
   tags: provisioning
   vars_files:
-    -variables.yml
+    - ./variables.yml
 
   tasks:
     - name: Create my security group
